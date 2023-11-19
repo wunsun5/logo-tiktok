@@ -1,0 +1,45 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: black;
+}
+
+.tiktok{
+    position: relative;
+    width:  3em;
+    height: 17.5em;
+    background-color: white;
+    box-shadow:  1em .9em 0 0 #ee1d52;
+    filter: drop-shadow(-1em -.8em 0 #69c9d0);
+}
+
+.tiktok::after, .tiktok::before{
+    content: '';
+    position: absolute;
+}
+
+.tiktok::before{
+    width: 8em;
+    height: 8em;
+    border: 3em solid white;
+    filter: drop-shadow(1.4em 0 0 #ee1d52);
+    border-radius: 50%;
+    border-top-color: transparent;
+    transform: rotate(45deg);
+    bottom: -6em;
+    right: -0.04em;
+}
+
+.tiktok::after{
+    width: 12em;
+    height: 12em;
+    border: 3em solid white;
+    border-radius: 50%;
+    border-color: transparent transparent white transparent;
+    filter: drop-shadow(1.4em 0 0 #ee1d52);
+    top: -8.2em;
+    transform: rotate(45deg);
+}
+
